@@ -57,7 +57,6 @@ $result = $conn->query($sql);
     <?php endif; ?>
 
     <?php 
-    // إغلاق الاتصال
     $conn->close(); 
     ?>
 </main>
