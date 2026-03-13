@@ -1,0 +1,238 @@
+/* ===== Emerald & Bronze Luxury Theme - Final Fixed ===== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #fffdf5;
+    color: #2c3e50;
+    line-height: 1.6;
+    padding-bottom: 100px; /* مسافة لضمان عدم اختفاء المحتوى خلف الفوتر */
+}
+
+/* ===== Header & Fixed Navigation ===== */
+
+header {
+    background-color: #043927;
+    color: #fffdf5;
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 4px solid #cd7f32;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    
+    /* تثبيت الهيدر في الأعلى دائمًا */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* لضمان تناسق القائمة على الشاشات الصغيرة */
+}
+
+nav ul li a {
+    color: #fffdf5;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 4px;
+    background-color: #cd7f32;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #a66121;
+    transform: translateY(-2px);
+}
+
+/* ===== إصلاح حجم صورة الهوم الكبيرة (Hero Image) ===== */
+
+.home-image {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+    padding: 0 20px;
+}
+
+.home-image img {
+    max-width: 100%; /* لا تخرج عن حدود الشاشة */
+    width: 1000px;    /* نحدد عرضاً أقصى مناسباً */
+    height: 400px;   /* نحدد ارتفاعاً ثابتاً لمنع الحجم الضخم */
+    object-fit: cover; /* أهم خاصية: تقص الصورة لتناسب الحجم بدون تشويه */
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+/* ===== Main Content Area ===== */
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h2 {
+    color: #043927;
+    border-left: 6px solid #cd7f32;
+    padding-left: 15px;
+    margin-bottom: 35px;
+    font-size: 28px;
+}
+
+/* ===== Products Grid (صفحة المنتجات) ===== */
+
+.products {
+    display: flex;
+    flex-wrap: wrap; /* للسماح بنزول العناصر للسطر التالي إذا ضاق المكان */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.card {
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eee;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* إصلاح حجم صور المنتجات داخل الكروت */
+.card img {
+    width: 100%;      /* تأخذ عرض الكارد بالكامل */
+    height: 220px;    /* ارتفاع ثابت وموحد لكل صور المنتجات */
+    object-fit: cover; /* الحفاظ على تناسق الأبعاد بدون تمطيط */
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #043927;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+    height: 45px; /* ارتفاع ثابت للوصف لتوحيد حجم الكروت */
+    overflow: hidden; /* إخفاء النص الزائد */
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    color: #cd7f32;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* ===== Cart Specific Styles (صور السلة المصغرة) ===== */
+
+.cart-img {
+    width: 75px;      /* عرض صغير جداً ومناسب للسلة */
+    height: 75px;     /* ارتفاع متساوي */
+    object-fit: cover; /* الحفاظ على التناسب */
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* ===== Tables (الآدمن والسلة) ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    margin-top: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+th {
+    background-color: #043927;
+    color: #fffdf5;
+    padding: 18px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+td {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+    vertical-align: middle; /* توسيط المحتوى عمودياً */
+}
+
+/* ===== Forms & Buttons ===== */
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+textarea {
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-family: inherit;
+}
+
+button, input[type="submit"] {
+    background-color: #043927;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #cd7f32;
+}
+
+/* ===== Footer ===== */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #043927;
+    color: #cd7f32;
+    text-align: center;
+    padding: 15px;
+    font-size: 13px;
+    border-top: 2px solid #cd7f32;
+    z-index: 1000;
+}

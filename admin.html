@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Elegant Gems</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Elegant Gems - Dashboard</h1>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="product.php">Collection</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="cart.php">Cart</a></li>
+            <li><a href="admin.php">Dashboard</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Customer Orders</h2>
+    <p>Below are the details of all orders placed by customers:</p>
+
+    <?php if (!empty($orders)): ?>
+        <table border="1" cellpadding="10" style="width:100%; border-collapse: collapse; margin-top: 20px; text-align: center;">
+            <thead>
+                <tr style="background-color: #f2f2f2;">
+                    <th>Order ID</th>
+                    <th>Customer Name</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Shipping Address</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($orders as $order): ?>
+                    <tr>
+                        <td><?php echo $order["id"]; ?></td>
+                        <td><?php echo htmlspecialchars($order["name"]); ?></td>
+                        <td><?php echo htmlspecialchars($order["product"]); ?></td>
+                        <td><?php echo $order["quantity"]; ?></td>
+                        <td><?php echo htmlspecialchars($order["address"]); ?></td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>
+    <?php else: ?>
+        <div style="text-align:center; padding: 50px; border: 1px dashed #ccc; margin-top: 20px;">
+            <p style="color: #666; font-size: 1.2em;">لا توجد طلبات سابقة (No previous orders found)</p>
+        </div>
+    <?php endif; ?>
+</main>
+
+<footer>
+    <p>&copy; 2026 Elegant Gems Luxury Store. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
