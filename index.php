@@ -90,7 +90,7 @@ if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
         <li><a href="index.html">Home</a></li>
         <li><a href="product.html">Collection</a></li>
         <li><a href="contact.html">Contact Us</a></li>
-        <li><a href="cart.html">Cart</a></li>
+        <li><a href="cart.php">Cart</a></li>
         <li><a href="admin.html">Dashboard</a></li>
         
     </ul>
