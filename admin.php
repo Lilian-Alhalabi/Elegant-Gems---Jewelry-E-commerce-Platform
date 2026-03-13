@@ -5,7 +5,6 @@ header("Pragma: no-cache");
 
 include 'db.php';
 
-// 2. جلب الطلبات من الجدول (ترتيب من الأحدث للأقدم)
 $sql = "SELECT * FROM orders ORDER BY id DESC";
 $result = $conn->query($sql);
 ?>
@@ -21,7 +20,7 @@ $result = $conn->query($sql);
     <h1>Elegant Gems - Dashboard</h1>
     <nav>
         <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="product.php">Collection</a></li>
             <li><a href="contact.html">Contact Us</a></li>
             <li><a href="cart.php">Cart</a></li>
