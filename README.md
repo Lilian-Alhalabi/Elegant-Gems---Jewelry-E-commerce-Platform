@@ -51,5 +51,5 @@ To run this project on your local machine:
 ---
 
 ## 📧 Contact
-Your Name - [Your Email/LinkedIn]
-Project Link: [https://github.com/yourusername/elegant-gems](https://github.com/yourusername/elegant-gems)
+Lilian Alhalabi - [Liliyanalhalabi@gmail.com]
+Project Link: (https://github.com/Lilian-Alhalabi/Elegant-Gems---Jewelry-E-commerce-Platform/edit/main/README.md)
