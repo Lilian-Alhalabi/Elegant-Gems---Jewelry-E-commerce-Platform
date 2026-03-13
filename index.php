@@ -1,9 +1,7 @@
 <?php
-// الجزء البرمجي: نضعه في البداية لتجهيز البيانات قبل عرض الصفحة
 session_start();
 
 $cart_count = 0;
-// حساب عدد القطع في السلة إذا كانت موجودة
 if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $item) {
         $cart_count += (isset($item['p_qty']) ? $item['p_qty'] : 0);
@@ -19,7 +17,6 @@ if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
     <title>Elegant Gems | Home</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* التنسيقات الفاخرة التي اعتمدتها في تصميمك */
         .home-layout {
             display: flex;
             flex-direction: column; 
@@ -90,7 +87,7 @@ if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
         <h1>Elegant Gems</h1>
         <nav>
     <ul>
-        <li><a href="home.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="product.html">Collection</a></li>
         <li><a href="contact.html">Contact Us</a></li>
         <li><a href="cart.php">Cart</a></li>
