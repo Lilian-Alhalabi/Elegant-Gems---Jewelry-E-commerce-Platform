@@ -3,6 +3,7 @@
 A sophisticated, full-stack e-commerce web application designed for high-end jewelry retail. This project demonstrates a complete integration of frontend design and backend functionality.
 
 ## 🚀 Live Demo
+
 Experience the live website here:
 **[http://ElegantGems.gt.tc](http://ElegantGems.gt.tc)**
 
