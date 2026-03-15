@@ -2,7 +2,7 @@
 
 A sophisticated, full-stack e-commerce web application designed for high-end jewelry retail. This project demonstrates a complete integration of frontend aesthetics and backend functionality using **PHP** and **MySQL**.
 
-## 🚀 Live Demo
+##  Live Demo
 
 
 https://github.com/user-attachments/assets/6674022a-eacf-4446-a62d-833768ef0503
@@ -17,7 +17,7 @@ Experience the live website here:
 > Link availability may vary based on server status)
 ---
 
-## 🛠️ Technical Stack
+##  Technical Stack
 
 | Category | Technology |
 | :--- | :--- |
@@ -29,7 +29,7 @@ Experience the live website here:
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
 * **Premium Product Display:** A curated gallery of luxury jewelry with detailed pricing and high-quality imagery.
 * **Session-Based Shopping Cart:** Users can add multiple items to their cart. The selections are tracked and preserved across different pages using **PHP Sessions**.
@@ -39,7 +39,7 @@ Experience the live website here:
 
 ---
 
-## 📸 Screenshots
+##  Screenshots
 
 
 | | |
@@ -51,7 +51,7 @@ Experience the live website here:
 
 
 
-## 🗄️ Database Architecture
+##  Database Architecture
 
 The system is powered by a relational database named `accessory_store`, consisting of three primary tables:
 
@@ -61,7 +61,7 @@ The system is powered by a relational database named `accessory_store`, consisti
 
 ---
 
-## ⚙️ Installation & Local Setup
+##  Installation & Local Setup
 To run this project on your local machine:
 1.  **Clone the Repo:** `git clone https://github.com/yourusername/elegant-gems.git`
 2.  **Database:** Import the `database.sql` file into your local **phpMyAdmin**.
@@ -70,7 +70,7 @@ To run this project on your local machine:
 
 ---
 
-## 📧 Contact & Support
+##  Contact & Support
 
 * **Developer:** Lilian Alhalabi
 * **Email:** [Liliyanalhalabi@gmail.com]
