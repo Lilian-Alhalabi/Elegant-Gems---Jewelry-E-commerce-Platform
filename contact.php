@@ -1,5 +1,5 @@
 <?php
-include 'db.php'; // التأكد من الاتصال بالقاعدة
+include 'db.php';
 
 $message_sent = false;
 $error_msg = "";
@@ -9,7 +9,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = $conn->real_escape_string($_POST['email']);
     $msg = $conn->real_escape_string($_POST['message']);
 
-    // محاولة إدخال البيانات في جدول messages (تأكد انك أنشأت الجدول كما شرحت لك سابقاً)
     $sql = "INSERT INTO messages (name, email, message) VALUES ('$name', '$email', '$msg')";
     
     if ($conn->query($sql) === TRUE) {
