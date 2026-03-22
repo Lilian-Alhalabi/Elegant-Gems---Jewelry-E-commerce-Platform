@@ -1,9 +1,7 @@
 <?php
-// الجزء البرمجي: نضعه في البداية لتجهيز البيانات قبل عرض الصفحة
 session_start();
 
 $cart_count = 0;
-// حساب عدد القطع في السلة إذا كانت موجودة
 if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
     foreach ($_SESSION['cart'] as $item) {
         $cart_count += (isset($item['p_qty']) ? $item['p_qty'] : 0);
@@ -20,7 +18,6 @@ if (isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
-        /* التنسيقات الفاخرة التي اعتمدتها في تصميمك */
         .home-layout {
             display: flex;
             flex-direction: column; 
